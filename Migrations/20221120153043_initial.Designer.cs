@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Andals.API.Migrations
 {
     [DbContext(typeof(AndalsDbContext))]
-    [Migration("20221119041256_initial")]
+    [Migration("20221120153043_initial")]
     partial class initial
     {
         /// <inheritdoc />
