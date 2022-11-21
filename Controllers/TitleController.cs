@@ -74,7 +74,7 @@ namespace Andals.API.Controllers
         //Delete Title
         [HttpDelete]
         [Route("{id:int}")]
-        public async Task<IActionResult> UpdateTitle([FromRoute] int id)
+        public async Task<IActionResult> DeleteTitle([FromRoute] int id)
         {
             var existingTitle = await andalsDbContext.Titles.FirstOrDefaultAsync(x => x.ID == id);
             if (existingTitle != null)

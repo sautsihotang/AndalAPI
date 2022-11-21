@@ -88,7 +88,7 @@ namespace Andals.API.Controllers
         //Delete Position
         [HttpDelete]
         [Route("{id:int}")]
-        public async Task<IActionResult> UpdatePosition([FromRoute] int id)
+        public async Task<IActionResult> DeletePosition([FromRoute] int id)
         {
             var existingPosition = await andalsDbContext.Positions.FirstOrDefaultAsync(x => x.ID == id);
             if (existingPosition != null)
